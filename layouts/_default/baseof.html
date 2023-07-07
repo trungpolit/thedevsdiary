@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language }}" dir="{{ .Language.LanguageDirection | default "auto" }}">
+
+<head>
+    {{- partial "head.html" . }}
+</head>
+
+<body class="
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+{{- print "list" -}}
+{{- end -}}
+{{- if eq site.Params.defaultTheme `dark` -}}
+{{- print " dark" }}
+{{- end -}}
+" id="top">
+{{- partialCached "header.html" . .Page -}}
+<main class="main">
+    {{- block "main" . }}{{ end }}
+</main>
+{{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+<script src="/js/medium-zoom.min.js"></script>
+<script>
+    mediumZoom('img', {
+        margin: 24,
+        background: 'rgba(255,255,255,0.9)',
+        scrollOffset: 0,
+    });
+</script>
+</body>
+
+</html>
