@@ -1,0 +1,17 @@
+name = "architecture-weekly"
+main = "src/worker.js"
+compatibility_date = "2023-06-28"
+
+account_id = "8cc4b3ee248e22c83521e3ef9441bcd9"
+workers_dev = true
+
+# Cron Triggers
+# Docs: https://developers.cloudflare.com/workers/platform/triggers/cron-triggers/
+# Configuration: https://developers.cloudflare.com/workers/wrangler/configuration/#triggers
+[triggers]
+crons = ["1 */6 * * *"]
+
+[[r2_buckets]]
+binding = 'thediary'
+bucket_name = 'thediary'
+preview_bucket_name = 'thediary'

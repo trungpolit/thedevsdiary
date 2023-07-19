@@ -1,0 +1,57 @@
+{
+  "name": "swiper",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-image": "^4.1.0",
+    "react-lines-ellipsis": "^0.15.3",
+    "react-loading-skeleton": "^3.3.1",
+    "react-query": "^3.39.3",
+    "react-scripts": "5.0.1",
+    "react-show-more-text": "^1.6.2",
+    "swiper": "^10.0.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build-dist": "react-scripts build && yarn build-rename",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-rename": "npm run build-rename-js&&npm run build-rename-css&&npm run build-fix-sourcemap",
+    "build-rename-js": "renamer --find '/main\\.[^\\.]+\\./' --replace \"main.\" build/static/js/*",
+    "build-rename-css": "renamer --find '/main\\.[^\\.]+\\./' --replace \"main.\" build/static/css/*",
+    "build-fix-sourcemap": "npm run build-fix-sourcemap-js&&npm run build-fix-sourcemap-css",
+    "build-fix-sourcemap-js": "replace \"# sourceMappingURL=main..*.js.map\" \"# sourceMappingURL=main.js.map\" build/static/js/main.js",
+    "build-fix-sourcemap-css": "replace \"# sourceMappingURL=main..*.map\" \"# sourceMappingURL=main.css.map\" build/static/css/main.css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "renamer": "^4.0.0",
+    "replace": "^1.2.2",
+    "serve": "^14.2.0"
+  }
+}

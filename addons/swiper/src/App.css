@@ -1,0 +1,50 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.fit {
+    max-inline-size: 100%;
+    block-size: auto;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.splide__arrow svg {
+    fill: rgb(218, 218, 219);
+}
+
+.splide__arrow:hover:not(:disabled) svg {
+    fill: black;
+}
+
+.splide__pagination__page.is-active {
+    background: black;
+}
+
+.line-clamp-3 {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-6 {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.splide {
+    padding: 0.5em;
+}
+
+.splide__pagination {
+    bottom: 0;
+}
