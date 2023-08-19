@@ -1,5 +1,5 @@
 ---
-title: "8 sai lầm ngộ nhận của hệ thống phân tán"
+title: "[Distributed System] - 8 sai lầm ngộ nhận của hệ thống phân tán"
 date: "2023-06-17T09:51:03+07:00"
 author: "telion"
 tags: ["distributed system"]

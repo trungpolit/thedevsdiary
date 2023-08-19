@@ -1,5 +1,5 @@
 ---
-title: "Bottleneck #01: Tech Debt"
+title: "[Bottlenecks of Scaleups] - #01 Tech Debt"
 date: 2023-08-19T00:21:33+07:00
 author: "telion"
 tags: ["Bottlenecks of Scaleups", "Tech Debt"]
