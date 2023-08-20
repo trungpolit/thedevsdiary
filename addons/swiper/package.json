@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
+    "@tanstack/query-sync-storage-persister": "^4.33.0",
+    "@tanstack/react-query": "^4.33.0",
+    "@tanstack/react-query-persist-client": "^4.33.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,7 +15,6 @@
     "react-image": "^4.1.0",
     "react-lines-ellipsis": "^0.15.3",
     "react-loading-skeleton": "^3.3.1",
-    "react-query": "^3.39.3",
     "react-scripts": "5.0.1",
     "react-show-more-text": "^1.6.2",
     "swiper": "^10.0.4",

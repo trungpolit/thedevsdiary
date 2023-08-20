@@ -46,5 +46,5 @@
 }
 
 .splide__pagination {
-    bottom: 0;
+    bottom: -10px;
 }

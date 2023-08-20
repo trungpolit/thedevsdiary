@@ -1,5 +1,7 @@
 import React, {Fragment, useState} from 'react';
-import {QueryClient, QueryClientProvider, useQuery} from 'react-query';
+import {QueryClient, QueryClientProvider, useQuery} from '@tanstack/react-query';
+import { persistQueryClient } from '@tanstack/react-query-persist-client'
+import { createSyncStoragePersister } from '@tanstack/query-sync-storage-persister'
 import {Splide, SplideSlide} from '@splidejs/react-splide';
 import Skeleton from 'react-loading-skeleton';
 
@@ -10,6 +12,11 @@ import './App.css';
 import noimage from './no-image.webp';
 
 const queryClient = new QueryClient();
+const localStoragePersister = createSyncStoragePersister({ storage: window.localStorage });
+persistQueryClient({
+    queryClient,
+    persister: localStoragePersister,
+});
 
 const FEED_KEY = 'feeds';
 const FEED_URL = 'https://pub-9b8681f8055a4b3bbac9c4f748518548.r2.dev/architecture-weekly.json';
@@ -49,12 +56,15 @@ function Image({src, alt, style, ...props}) {
 }
 
 function WeeklyFeedSwiper() {
-    const {isLoading, error, data} = useQuery(FEED_KEY, () =>
-        fetch(FEED_URL).then(async res => {
-                // await new Promise(r => setTimeout(r, 5000));
-                return res.json();
-            }
-        )
+    const {isLoading, error, data} = useQuery([FEED_KEY], () =>
+            fetch(FEED_URL).then(async res => {
+                    // await new Promise(r => setTimeout(r, 5000));
+                    return res.json();
+                }
+            ), {
+            staleTime: 1000 * 60 * 60 * 24,
+            cacheTime: 1000 * 60 * 60 * 24,
+        }
     );
 
 
