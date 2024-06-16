@@ -6,6 +6,8 @@ tags: ["GraphQL","Kubernetes","Clean Code","C4 Model","Etsy"]
 categories: ["Architecture Weekly"]
 ---
 
+{{< youtube m12VnSqXxQM >}}
+
 ## Chủ đề 1: Tái đánh giá về GraphQL
 
 ### Bối cảnh
