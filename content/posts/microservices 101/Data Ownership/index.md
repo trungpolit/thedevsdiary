@@ -1,6 +1,6 @@
 ---
 title: "[Microservices 101] Lesson 3: Data Ownership"
-date: 2024-06-17T00:10:38+07:00
+date: 2024-06-17T00:10:00+07:00
 author: "telion"
 tags: ["Microservices 101"]
 categories: ["Microservices 101"]
