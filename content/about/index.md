@@ -19,3 +19,4 @@ Bạn cũng có thể theo dõi tôi trên các kênh mạng xã hội để c�
 - [The Dev's Diary Youtube](https://www.youtube.com/@thedevsdiary): Hãy nhấn đăng ký và bật thông báo để không bỏ lỡ các video mới nhất.
 - [The Dev's Diary Tiktok](https://tiktok.com/@thedevsdiary): Hãy nhấn theo dõi để xem những video ngắn về các mẹo và thủ thuật hữu ích.
 - [The Dev's Diary Substack](https://thedevsdiary.substack.com): Đăng ký nhận bản tin hàng tuần qua email với những bài viết mới nhất.
+- [The Dev's Diary Spotify](https://open.spotify.com/show/3JGYNMabQDJDacJfXiqFg1): Hãy nhấn theo dõi để nghe podcasts điểm tin hàng tuần về các chủ đề Solution Architecture & System Architecture từ các chia sẻ thực tế của các chuyên gia và các công ty công nghệ hàng đầu.
